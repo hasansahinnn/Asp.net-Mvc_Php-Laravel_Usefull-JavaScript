@@ -1,0 +1,51 @@
+------------------------------- //Ajax Laravel(Php) ----------------------------
+  //View
+
+ {{ csrf_field() }}   
+
+ $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    }); 
+
+ $.ajax({
+     type: 'POST',
+     url: '{{route('Support')}}',
+     headers: {
+         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+     },
+    data: {data1:inputvalue1},
+   	 success: function (data) 
+    	{
+   	    alert(data.message);         
+    	}
+ });
+
+ // Controller
+
+	return response()->json(['status'=>1,'message'=>'Success.']);
+
+------------------------------- Ajax Laravel(Php)\\ -----------------------------
+
+
+------------------------------- //Ajax ASP.NET MVC ----------------------------
+
+-----//Type1
+
+
+-----Type1\\
+
+
+-----//Type2
+
+
+-----Type2\\
+
+
+-----//Type3
+
+
+-----Type3\\
+
+------------------------------- Ajax  ASP.NET MVC\\ -----------------------------

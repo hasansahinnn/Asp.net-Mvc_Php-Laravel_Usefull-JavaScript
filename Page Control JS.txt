@@ -1,2 +1,12 @@
-js
-try
+------------------------------- //After Page Load + Timer (12 Sec) + Class Trigger Click ----------------------------
+window.addEventListener("load", function () {
+      setTimeout(sohbet, 12000);
+}, false);
+
+function sohbet(){$('.hoverl_6R').trigger('click');}
+------------------------------- After Page Load + Timer (12 Sec) + Class Trigger Click\\ -----------------------------
+
+
+------------------------------- //After Page Load + Timer (12 Sec) + Class Trigger Click ----------------------------
+
+------------------------------- After Page Load + Timer (12 Sec) + Class Trigger Click\\ -----------------------------
