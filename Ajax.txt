@@ -29,6 +29,21 @@
 	return response()->json(['status'=>1,'message'=>'Success.']);
 
  \\ Controller
+
+-----// Setinterval Table Refresh every x Second
+<div class="tab-pane active" id="tab1"></div>
+
+setInterval(function () {
+        $('#tab1').load('/Application/GetData?clientid=5');
+        , 10000);
+
+
+
+-----// Easy Post
+$.post('/Home/DataPost',$("form").serialize(), function(data){
+  //success
+}
+
 ------------------------------- Ajax Laravel(Php)\\ -----------------------------
 
 
